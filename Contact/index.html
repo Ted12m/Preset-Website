@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Connect With Us</h1>
+        <p>We would love to respond to your queries. <br>Feel free to get in touch with us.</p>
+
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Ted Mosby" id="name" name="name" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Phone</label>
+                            <input type="number" placeholder="0000000000" id="phone" name="phone" required>
+                        </div>
+                    </div>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="xyz@domain.com" id="email" name="email" required>
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="" id="Subject" name="subject">
+                        </div>
+                    </div>
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message" name="message" id="message"></textarea>
+                    <button type="submit" name="submit" value="Add" id="button" onclick="save()">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach Us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>hmzmulla12@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Phone</td>
+                        <td>+91 9004288773</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <p id="savedText"></p>
+    <p id="openedText"></p>
+</body>
+
+</html>
